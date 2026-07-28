@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rodrigues & Cacciacarro | Setor de Cobrança</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:#f8f9fb;
+color:#333;
+
+}
+
+header{
+    min-height:100vh;
+    padding:60px 0;
+
+background:
+linear-gradient(rgba(8,22,45,.88),rgba(8,22,45,.88)),
+url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+.logo{
+
+width:300px;   /* Aumente este valor */
+margin-bottom:10px;
+
+animation:fadeDown 1.2s;
+
+}
+
+h1{
+
+font-family:"Playfair Display";
+font-size:58px;
+
+}
+
+h2{
+
+font-family:"Playfair Display";
+font-size:40px;
+color:#0D2D5B;
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+margin-top:25px;
+
+font-size:20px;
+max-width:850px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.9;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:45px;
+
+padding:18px 42px;
+
+background:#C9A227;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+background:#b58d18;
+
+}
+
+section{
+
+padding:100px 0;
+
+}
+
+.about{
+
+background:white;
+
+}
+
+.about p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-top:20px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+color:#C9A227;
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+color:#0D2D5B;
+
+margin-bottom:15px;
+
+}
+
+.valores{
+
+background:#0D2D5B;
+
+color:white;
+
+}
+
+.valores-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.valor{
+
+padding:25px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:15px;
+
+}
+
+.valor i{
+
+font-size:35px;
+
+margin-bottom:18px;
+
+color:#C9A227;
+
+}
+
+footer{
+
+background:#08162d;
+
+color:white;
+
+padding:35px;
+
+text-align:center;
+
+}
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+transform:translateY(-60px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:38px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .logo{
+        width:140px;
+    }
+
+} /* <-- Feche o @media aqui */
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    background: #20ba5a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container hero">
+
+<img src="logo2.png" class="logo">
+
+<h1>Rodrigues & Cacciacarro</h1>
+
+<p><strong>Especialistas em Recuperação de Créditos</strong></p>
+
+<p>
+
+Transformamos inadimplência em resultados por meio de estratégias inteligentes,
+negociações eficientes e atendimento personalizado.
+
+</p>
+
+<a href="#sobre" class="btn">
+Conheça nossa atuação
+</a>
+
+</div>
+
+</header>
+
+<section class="about reveal" id="sobre">
+
+<div class="container">
+
+<h2>Quem Somos</h2>
+
+<p>
+
+A <strong>Rodrigues & Cacciacarro – Setor de Cobrança</strong> atua de forma especializada na recuperação de créditos para empresas de diversos segmentos.
+
+Nosso trabalho é pautado pela ética, transparência e eficiência, oferecendo soluções inteligentes que reduzem a inadimplência e fortalecem a saúde financeira dos nossos clientes.
+
+Cada negociação é conduzida com profissionalismo, respeito e foco em resultados duradouros.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="container reveal">
+
+<h2>Nossa Especialidade</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>Recuperação de Créditos</h3>
+
+<p>Estratégias modernas para recuperação financeira.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-handshake"></i>
+
+<h3>Negociação</h3>
+
+<p>Mediação profissional preservando o relacionamento entre as partes.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Redução da Inadimplência</h3>
+
+<p>Soluções para aumentar o fluxo de caixa da sua empresa.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-building"></i>
+
+<h3>Atendimento Empresarial</h3>
+
+<p>Serviços personalizados para empresas de todos os portes.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="valores reveal">
+
+<div class="container">
+
+<h2 style="color:white;">Nosso Compromisso</h2>
+
+<div class="valores-grid">
+
+<div class="valor">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Ética</h3>
+
+</div>
+
+<div class="valor">
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>Transparência</h3>
+
+</div>
+
+<div class="valor">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Agilidade</h3>
+
+</div>
+
+<div class="valor">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Excelência</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+    <h3>Rodrigues & Cacciacarro</h3>
+
+    <p>Setor de Cobrança</p>
+
+    <p style="font-size:13px;color:#bfc7d4;">
+        CNPJ: 60.673.184/0001-82
+    </p>
+
+    <p style="font-size:13px;color:#bfc7d4;margin-top:8px;">
+        © 2026 Rodrigues & Cacciacarro. Todos os direitos reservados.
+    </p>
+
+</footer>
+
+<script>
+
+function reveal(){
+
+let reveals=document.querySelectorAll(".reveal");
+
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight=window.innerHeight;
+
+let revealTop=reveals[i].getBoundingClientRect().top;
+
+let revealPoint=100;
+
+if(revealTop<windowHeight-revealPoint){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+</script>
+
+<a
+    href="https://wa.me/5515998538222?text=Olá!%20Acessei%20o%20site%20da%20Rodrigues%20%26%20Cacciacarro%20e%20gostaria%20de%20conversar%20com%20um%20especialista."
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Fale conosco pelo WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+
+</html>
